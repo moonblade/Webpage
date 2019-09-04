@@ -1,0 +1,57 @@
+body{
+	color: blue;
+	text-align: center;
+	background-color: rgb(255,255,100);
+}
+
+.title-1{
+	font-size: 25px;
+}
+
+.container{
+	padding-top: 50px; 
+}
+
+.box-1{
+	text-align: center;
+	background-color: white;
+	float: left;
+	width: 24.5%;
+	border-left: 5px dotted red;
+	border-top: 5px dotted red;
+	border-bottom: 5px dotted red;
+}
+.box-1 ul{
+	text-align: left;
+	padding: 40px;
+	list-style: square;
+	font-size: 20px; 
+}
+
+.box-1 h2{
+	color: green;
+	background-color: rgb(255,255,0);
+	font-size: 30px;
+}
+.box-2{
+	text-align: center;
+	background-color: white;
+	float: left;
+	width: 24.5%;
+	border-left: 5px dotted red;
+	border-right: 5px dotted red;
+	border-top: 5px dotted red;
+	border-bottom: 5px dotted red;
+}
+.box-2 ul{
+	text-align: left;
+	padding: 40px;
+	list-style: square; 
+	font-size: 20px; 
+}
+
+.box-2 h2{
+	color: green;
+	background-color: rgb(255,255,0);
+	font-size: 30px;
+}

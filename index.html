@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NAV-AIDS SITES MONITOR</title>	
+		<link rel="stylesheet" type="text/css" href="/static/style.css">
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			var socket = io.();
+			
+			socket.on('dvor-p',function(data){
+				//var data3 = data.description;
+				
+				//document.getElementById("data3").innerHTML = '' + data.description;
+				//
+				document.getElementById("dvor-p").src = data.description;	
+				});
+			socket.on('llz-p',function(data){
+				document.getElementById("llz-p").src = data.description;
+				});
+			socket.on('disconnect',function(){
+				SERVER DISCONNECTED
+			});
+		</script>
+
+	</head>
+<body>
+     
+     <h1>NAV-AIDS SITES MONITORING</h1>
+     <div class="sites">
+          <h2>DVOR</h2>
+          <h3 id="dvor-t">23°C</h3>
+          <li>RAW POWER SUPPLY:<img id="dvor-p" src="/static/green.png"></li>
+          <li>DVOR STATUS---------:<img id="dvor" src="/static/green.png"></li>
+          <li>HPDME STATUS-------:<img id="hpdme" src="/static/green.png"></li>
+     </div>
+     <div class="sites">
+	      <h2>LOCALIZER</h2>
+	      <h3 id="llz-t">21°C</h3>
+	      <li>RAW POWER SUPPLY:<img id="llz-p" src="/static/green.png"></li>
+	      <li>LOCALIZER STATUS-:<img id="llz" src="/static/green.png"></li>
+	      <br><br><br><br>
+	 </div>
+     <div class="sites">
+	      <h2>GLIDE PATH</h2>
+	      <h3 id="gp-t">19°C</h3>
+	      <li>RAW POWER SUPPLY:<img id="gp-p"src="/static/green.png"></li>
+	      <li>GLIDEPATH STATUS-:<img id="gp" src="/static/green.png"></li>
+	      <li>LPDME STATUS-------:<img id="lpdme" src="/static/green.png"></li>
+     </div>
+     <div class="sites">
+	      <h2>NDB</h2>
+	      <h3 id="ndb-t">26°C</h3>
+	      <li>RAW POWER SUPPLY:<img id="ndb-p" src="/static/green.png"></li>
+	      <li>NDB STATUS-----------:<img id="ndb" src="/static/green.png"></li>
+	      <br><br><br><br>
+     </div>
+     <div>
+     <br><br><br><br>
+     <h4>TRICHY INTERNATIONAL AIRPORT</h4>
+     </div>
+</body>	
+</html>
