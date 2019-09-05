@@ -9,7 +9,7 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-app.use('/static', express.static('public'));
+app.use('/static', express.static('.'));
 
 app.get('/',function(req, res){
 	res.sendFile(path.join(__dirname,'/index.html'));
